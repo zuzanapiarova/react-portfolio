@@ -1,0 +1,39 @@
+[
+    { 
+      "id": "",
+      "number": 1,
+      "imgName":"pricingComponent",
+      "image": "card",
+      "name": "first Project name", 
+      "description": "first project description first project description first project description first project description first project description",
+      "github": "https://github.com/zuzanapiarova",
+      "site": "https://www.frontendmentor.io/profile/zuzanapiarova"
+    }, 
+    { 
+      "id": "",
+      "number": 2,
+      "image": "project2img",
+      "name": "second Project name", 
+      "description": "second project description first project description first project description first project description first project description",
+      "github": "https://github.com/zuzanapiarova",
+      "site": "https://www.frontendmentor.io/profile/zuzanapiarova"
+    }, 
+    { 
+      "id": "",
+      "number": 3,
+      "image": "project1img",
+      "name": "third Project name", 
+      "description": "third project description first project description first project description first project description first project description",
+      "github": "https://github.com/zuzanapiarova",
+      "site": "https://www.frontendmentor.io/profile/zuzanapiarova"
+    }, 
+    { 
+      "id": "",
+      "number": 4,
+      "image": "project1img",
+      "name": "fourth Project name", 
+      "description": "fourth project description first project description first project description first project description first project description",
+      "github": "https://github.com/zuzanapiarova",
+      "site": "https://www.frontendmentor.io/profile/zuzanapiarova"
+    }
+  ]
