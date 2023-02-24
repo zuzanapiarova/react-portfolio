@@ -3,7 +3,7 @@ import React from "react";
 import CV from '../assets/CV.pdf';
 import links from '../assets/links.json';
 
-import { BsDownload } from 'react-icons/bs';
+import { BsDownload, BsWhatsapp } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { SiCodewars,  SiFrontendmentor } from 'react-icons/si';
@@ -19,26 +19,32 @@ const LinkButtons = (props) => {
 
    const getLink = () => {
     //possible buttons
-        if(props.name == 'github'){
-            return <a className='btn' href={github} target='_blank'> {<BsGithub />} Check my GitHub repositories</a>
+        if(props.name === 'github'){
+            return <a className='btn' href={github} target='_blank' rel="noreferrer"> {<BsGithub />} Check my GitHub repositories</a>
 
-        } else if(props.name == 'CVdownload'){
+        } else if(props.name === 'CVdownload'){
             return <a className='btn' href={CV} download> {<BsDownload />} Download CV</a>
 
-        } else if (props.name == 'CVopen'){
-           return  <a className='btn' href={CV} target='_blank'> {<IoBrowsersSharp />} Open CV</a>
+        } else if (props.name === 'CVopen'){
+           return  <a className='btn' href={CV} target='_blank' rel="noreferrer"> {<IoBrowsersSharp />} Open CV</a>
 
-        } else if(props.name == 'codewars'){
-            return <a className='btn' href={codewars} target='_blank'> {<SiCodewars />} Check my Codewars solutions</a>
+        } else if(props.name === 'codewars'){
+            return <a className='btn' href={codewars} target='_blank' rel="noreferrer"> {<SiCodewars />} Check my Codewars solutions</a>
 
-        } else if( props.name == 'frontendmentor'){
-            return <a className='btn' href={frontendMentor} target='_blank'> {<SiFrontendmentor />}Check my FrontendMentor challenges</a>
+        } else if( props.name === 'frontendmentor'){
+            return <a className='btn' href={frontendMentor} target='_blank' rel="noreferrer"> {<SiFrontendmentor />}Check my FrontendMentor challenges</a>
 
-        } else if(props.name == 'contact'){
+        } else if(props.name === 'contact'){
             return <a className='btn__filled' href='#contact'>{<AiOutlineMail />} Contact me</a>
 
-        }  else if(props.name == 'linkedin'){
-            return <a className='btn' href={linkedin} target='_blank'> {<BsLinkedin />}View my LinkedIn profile</a>
+        }  else if(props.name === 'linkedin'){
+            return <a className='btn' href={linkedin} target='_blank' rel="noreferrer"> {<BsLinkedin />}View my LinkedIn profile</a>
+
+        } else if(props.name === 'email'){
+            return <a className='btn' href='mailto:zuzana.piarova1@gmail.com' target='_blank' rel="noreferrer"> {<AiOutlineMail />}Direct email</a>
+        }
+        else if(props.name === 'whatsapp'){
+            return <a className='btn' href='https://api.whatsapp.com/send?phone=421907677920'target='_blank' rel="noreferrer"> {<BsWhatsapp />}WhatsApp message</a>
         }
     } 
 

@@ -5,10 +5,26 @@ const ProjectCard = (props) => {
 
     const {id, image, name, description, skills, github, site } = props.project;
 
+    const renderGithubIcon = () => {
+        if(github === ''){
+            return
+        } else {
+            return <a href={github} target='_blank' rel="noreferrer"><i>{<BsGithub />}</i></a>
+        }  
+    }
+
+    const renderSiteIcon = () => {
+        if(site === ''){
+            return
+        } else {
+            return <a href={site} target='_blank' rel="noreferrer"><i>{<BsLink45Deg />}</i></a>
+        }  
+    }
+
     return(
         <div className='project__card'>
             <div className='head__img--wrapper'>
-                <img className='head__img' src={image}></img>
+                <img className='head__img' src={image} alt='project site preview'></img>
             </div>
                 <div className='project__info'> 
                     <div className='info--wrapper'>
@@ -17,11 +33,8 @@ const ProjectCard = (props) => {
                         <p>{description}</p>
                     </div>
                     <div className='project__links--wrapper'>
-                        <div>
-                            <a href={github} target='_blank'><i>{<BsGithub />}</i></a>
-                            <a href={site} target='_blank'><i>{<BsLink45Deg />}</i></a>
-                        </div>
-                        <button className='see-more__btn'>See more</button>  
+                            {renderGithubIcon()}
+                            {renderSiteIcon()}
                     </div>               
                 </div>    
             </div>

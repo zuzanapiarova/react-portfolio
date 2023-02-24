@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Socials from './Socials.js';
 import blob from '../assets/images/magicpattern-blob-1677058980205.svg';
 import LinkButtons from './LinkButtons.js';
 
 const Home = () => {
+
     return(
         <section id='home'> 
         <div className='para__deco'>
@@ -31,12 +32,13 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <img src={blob}></img>
+                <img src={blob} alt='blob'></img>
             </div>
                  
             
         </section>
     )
 }
+
 
 export default Home;

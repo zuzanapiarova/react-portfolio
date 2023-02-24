@@ -1,11 +1,10 @@
 import React from 'react';
 import { AiOutlineStar, AiFillStar } from 'react-icons/ai'
-import { CgIfDesign } from 'react-icons/cg';
 
 const SkillCard = (props) => {
 
     const getRating = () => {
-        if(props.mainSkill.rating == 'beginner'){
+        if(props.mainSkill.rating === 'beginner'){
             return (
                 <div className='rating'>
                     <AiFillStar />
@@ -13,7 +12,7 @@ const SkillCard = (props) => {
                     <AiOutlineStar />
                 </div>
             )
-        } else if(props.mainSkill.rating == 'intermediate'){
+        } else if(props.mainSkill.rating === 'intermediate'){
             return (
                 <div className='rating'>
                     <AiFillStar />
@@ -21,7 +20,7 @@ const SkillCard = (props) => {
                     <AiOutlineStar />
                 </div>
                 )
-        } else if(props.mainSkill.rating == 'advanced'){
+        } else if(props.mainSkill.rating === 'advanced'){
             return (
                 <div className='rating'>
                     <AiFillStar />
@@ -37,9 +36,9 @@ const SkillCard = (props) => {
             const {name, icon, rating } = props.mainSkill
             return (
                 <div className='skill__card'>
-                    <img className='skill__icon' src={icon}></img>
+                    <img className='skill__icon' src={icon} alt='logos of popular frontend frameworks'></img>
                     <div>
-                        <h1>{name}</h1>
+                        <h3>{name}</h3>
                         <p>{rating}</p>
                         {getRating()}
                     </div>                 

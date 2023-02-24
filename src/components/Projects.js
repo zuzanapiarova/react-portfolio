@@ -158,8 +158,10 @@ const Projects = () => {
                 <LinkButtons name='codewars' />
                 <LinkButtons name='frontendmentor' />
             </div>
-            <div className='projects__container'>{renderProjectList}</div>
-            <img className='blob3' src={blob}></img>
+            <div className='projects__container'>
+              {renderProjectList}
+            </div>
+            <img className='blob3' src={blob} alt='blob'></img>
         </section>
     )
 }

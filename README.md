@@ -3,7 +3,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## resources 
-react icons https://react-icons.github.io/react-icons
+REACT ICONS https://react-icons.github.io/react-icons
+
+
+REACT SCROLL - scroll functions - can scroll on a section on click, links in navbar have active style when in window - https://www.npmjs.com/package/react-scroll <--documentation and --> use case https://relatablecode.com/how-to-make-a-navbar-with-react-scroll WORKS GOOD
 
 
 ## Available Scripts
