@@ -70,7 +70,7 @@ const Skills = () => {
                     {renderOtherSkills}
                 </div>
             </div>         
-            <img className='blob2' src={blob} alt='blob'></img>
+            <img className='blob blob2' src={blob} alt='blob'></img>
         </section>
     )
 }

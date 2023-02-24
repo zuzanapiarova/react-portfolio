@@ -9,6 +9,9 @@ REACT ICONS https://react-icons.github.io/react-icons
 REACT SCROLL - scroll functions - can scroll on a section on click, links in navbar have active style when in window - https://www.npmjs.com/package/react-scroll <--documentation and --> use case https://relatablecode.com/how-to-make-a-navbar-with-react-scroll WORKS GOOD
 
 
+DARK MODE BY UPDATING CSS VARIABLES https://www.section.io/engineering-education/dynamically-update-react-and-javascript-with-css-variables/#adding-a-custom-variable-to-change-the-react-logo-color
+
+
 ## Available Scripts
 
 In the project directory, you can run:

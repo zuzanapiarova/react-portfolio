@@ -35,7 +35,7 @@ const Contact = () => {
                 </form>
                 
             </div>
-            <img className='blob4' src={blob} alt='blob'></img> 
+            <img className='blob blob4' src={blob} alt='blob'></img> 
             <footer>
                 <p>&copy;{copyrightYear} Designed and developed by Zuzana Piarova.</p>
                 <p>Personal portfolio created with React.js. Check the <a href='https://github.com/zuzanapiarova/react-portfolio' target='_blank' rel="noreferrer">GitHub</a> repository for more.</p>

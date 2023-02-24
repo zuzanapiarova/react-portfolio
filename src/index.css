@@ -11,6 +11,8 @@
 
 :root{
   --bg: #ffffff;
+  --text: #222222;
+  --text-white: #ffffff;
   --black: #222222;
   --white: #ffffff;
   --primary: rgb(96, 5, 96);
@@ -42,6 +44,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: var(--transition-basic);
 }
 
 section{
@@ -63,23 +66,46 @@ img{
   margin: 0 auto;
 }
 
-h3, h4, h5, h6{
+p, h2, h3, h4, h5, h6{
   font-weight: 400;
+  color: var(--text);
 }
 
 h1{
   font-size: 3em;
+  color: var(--text);
 }
 
 h5{
   font-size: 1em;
 }
 
+.social__icons i{
+  color: var(--text)
+}
+
+.rating{
+  color: var(--text)
+}
+
+.project__links--wrapper i{
+  color: var(--text);
+}
+
+.blob{
+  transition: var(--transition-basic);
+}
+
+/*
+.blob{
+  filter: invert(100%) grayscale(40%);
+}
+*/
 
 /*   NAVBAR   *****************************************************************************************************************************/
 
 nav{
-  color: var(--black);
+  color: var(--text);
   position: fixed;
   padding: 0.8em 0;
   top: 0;
@@ -121,7 +147,7 @@ a.active::after{
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--black);
+  background-color: var(--text);
   transition: var(--transition-basic)
 }
 
@@ -218,26 +244,26 @@ section#home{
 
 .btn{
   width: max-content;
-  color: var(--black);
+  color: var(--text);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5em;
   padding: 0.75em 1.2em;
   border-radius: 0.4em;
-  border: 1px solid var(--black);
+  border: 1px solid var(--text);
   cursor: pointer;
   transition: var(--transition-basic);
   backdrop-filter: blur(5px);
 }
 
 .btn:hover{
-  background-color: var(--black);
-  color: var(--bg);
+  background-color: var(--text);
+  color: var(--text-white);
 }
 
 .btn__filled{
-  color: var(--white);
+  color: var(--text-white);
   width: max-content;
   display: flex;
   justify-content: center;
@@ -377,10 +403,10 @@ i:hover{
 .other__skills > *{
   padding: 0.5em 2em;
   margin: 1em;
-
   width: max-content;
-  color: var(--white);
+  color: var(--text);
   cursor:no-drop;
+  color: var(--white);
   background-color: var(--black) !important;
   background-image: none;
   background-color: var(--black);
@@ -391,6 +417,7 @@ i:hover{
 
 .other__skills > *:hover{
   background-color: none;
+  color: var(--text-white);
   background-image: var(--gradient1);
   background-position:100%;
   animation: btn-bg 1s infinite alternate;
@@ -551,7 +578,9 @@ i:hover{
   height: 8em;
   width: 8em;
   text-align: center;
-  color: white;
+  color: var(--white);
+  position: relative;
+  transition: var(--transition-basic);
 }
 
 .characteristic:nth-of-type(1){
@@ -573,11 +602,12 @@ i:hover{
   text-transform: uppercase;
   font-weight: 400;
   font-size: 0.8em;
+  color: var(--white);
 }
 
 .characteristic > i{
   font-size: 2em;
-   color: white;
+   color: var(--white);
    height: 100%;
 }
 
@@ -623,6 +653,7 @@ i:hover{
 .gallery{
   width: 49%;
   background-color:rgba(67, 3, 114, 0.378);
+  z-index: 0;
 }
 
 .gallery__card{
@@ -681,7 +712,7 @@ input, textarea{
   width: 100%;
   background: none;
   padding: 0.5em 1em;
-  border: 1px solid var(--black);
+  border: 1px solid var(--text);
   border-radius: 8px;
   backdrop-filter: blur(6px);
 }
@@ -700,6 +731,10 @@ footer{
   padding-right: 5em;
   bottom: 2em;
   left: 2em;
+}
+
+footer p{
+  color: var(--black);
 }
 
 

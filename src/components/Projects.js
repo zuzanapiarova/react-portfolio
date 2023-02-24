@@ -161,7 +161,7 @@ const Projects = () => {
             <div className='projects__container'>
               {renderProjectList}
             </div>
-            <img className='blob3' src={blob} alt='blob'></img>
+            <img className='blob blob3' src={blob} alt='blob'></img>
         </section>
     )
 }
