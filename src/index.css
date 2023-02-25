@@ -21,6 +21,10 @@
   --gradient1: linear-gradient(45deg,var(--tertiary), var(--secondary), var(--primary) );
   --glass: rgba(255, 255, 255, 0.19);
   --shadow: rgba(0, 0, 0, 0.197);
+ --swiper-navigation-color: white;
+ --swiper-theme-color: white;
+--swiper-pagination-bottom: 4em;
+
 
   /* dimensions */
   --container-width-lg: 75%;
@@ -96,6 +100,9 @@ h5{
   transition: var(--transition-basic);
 }
 
+input, textarea{
+  color: var(--text)
+}
 /*
 .blob{
   filter: invert(100%) grayscale(40%);
@@ -614,6 +621,7 @@ i:hover{
 .about__bottom{
   display: flex;
   width: 100%;
+  align-items: start;
   justify-content: space-between;
   margin-top: 1em;
   height: 70%;
@@ -622,7 +630,7 @@ i:hover{
 
 .timeline{
   width: 49%;
-  padding: 1em 1em 1em 4em;
+  padding-left:5em;
   line-height: 2em;
 }
 
@@ -652,16 +660,23 @@ i:hover{
 
 .gallery{
   width: 49%;
-  background-color:rgba(67, 3, 114, 0.378);
   z-index: 0;
+}
+
+.gallery--wrapper{
+  width: 80%;
+  height: 80%;
 }
 
 .gallery__card{
   width: 100%;
   height: 100%;
   object-fit: contain;
+  position: relative;
 }
-
+.swiper-pagination{
+  margin-top: 2em;
+}
 
 /*   CONTACTS   ***************************************************************************************************************************/
 

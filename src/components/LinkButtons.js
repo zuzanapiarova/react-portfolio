@@ -41,7 +41,7 @@ const LinkButtons = (props) => {
             return <a className='btn' href={linkedin} target='_blank' rel="noreferrer"> {<BsLinkedin />}View my LinkedIn profile</a>
 
         } else if(props.name === 'email'){
-            return <a className='btn' href='mailto:zuzana.piarova1@gmail.com' target='_blank' rel="noreferrer"> {<AiOutlineMail />}Direct email</a>
+            return <a className='btn' href='mailto:zuzana.piarova1@gmail.com' target='_blank' rel="noreferrer"> {<AiOutlineMail />}Open email</a>
         }
         else if(props.name === 'whatsapp'){
             return <a className='btn' href='https://api.whatsapp.com/send?phone=421907677920'target='_blank' rel="noreferrer"> {<BsWhatsapp />}WhatsApp message</a>
