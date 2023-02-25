@@ -1,19 +1,35 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import blob from '../assets/images/magicpattern-blob-1677062360102.svg';
-//import emailjs from '@emailjs-com';
+import emailjs from '@emailjs/browser';
 
 import LinkButtons from './LinkButtons';
 import Socials from './Socials';
 
 const Contact = () => {
 
-    const form = useRef();
+   const [formState, setFormState] = useState({});
 
-    const sendEmail = (e) => {
+
+   const changeHandler = (e) => {
+        setFormState({...formState, [e.target.name]: e.target.value})
+   }
+    const submitHandler = (e) => {
         e.preventDefault();
-        //emailjs.sendForm('service-id', 'template-id', form.current, 'user-id');
-    }
+        const config = {
+            SecureToken: 'c3a8dfda-d4b4-46a0-8c11-d5554bd48547', 
+            To : 'zuzana.piarova1@gmail.com',
+            From : formState.email,
+            Subject : "Portfolio message",
+            Body : `${formState.name} sends a message:${formState.message}`
+        };
+        if(window.Email){
+            window.Email.send(config).then(() => {
+                alert('Message sent succesfully!')}
+            );
+            
+        }
 
+    }
     const copyrightDate = new Date();
     const copyrightYear = copyrightDate.getFullYear();
 
@@ -27,11 +43,11 @@ const Contact = () => {
                     <LinkButtons name='email'/>
                     <LinkButtons name='whatsapp'/>
                 </div>
-                <form ref={form} onSubmit={sendEmail}>
-                    <input type='text' placeholder='Name or company ...' name='name' required></input>
-                    <input type='email' placeholder='Email ...' name='email' required></input>
-                    <textarea name='message' placeholder='Enter your message ...'></textarea>
-                    <button type='submit' className='btn__filled'>Send</button>
+                <form onSubmit={submitHandler}>
+                    <input type='text' placeholder='Name or company ...' onChange={changeHandler} value={formState.name || ''} name='name' required></input>
+                    <input type='email' placeholder='Email ...' name='email' onChange={changeHandler} value={formState.email || ''} required></input>
+                    <textarea name='message' placeholder='Enter your message ...' onChange={changeHandler} value={formState.message || ''}> </textarea>
+                    <button type='submit' className='btn__filled'>Send email</button>
                 </form>
                 
             </div>
