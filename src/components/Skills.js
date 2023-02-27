@@ -42,7 +42,7 @@ const Skills = () => {
         }, 
     ];
 
-    const otherSkills = ['JSON', 'VS Code', 'Git & GitHub', 'DOM', 'regular expressions', 'APIs', 'Node.js & npm']
+    const otherSkills = ['JSON', 'VS Code', 'Git & GitHub', 'DOM', 'regular expressions', 'APIs', 'Node.js & npm', 'responsive design', 'command line']
 
     const renderMainSkills = mainSkills.map(mainSkill => {
         return (

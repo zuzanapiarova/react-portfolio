@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import blob from '../assets/images/magicpattern-blob-1677062360102.svg';
-import emailjs from '@emailjs/browser';
+import blob from '../assets/images/newblob.svg';
 
 import LinkButtons from './LinkButtons';
 import Socials from './Socials';
