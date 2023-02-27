@@ -32,7 +32,7 @@ const Home = () => {
                     <Socials />
                 </div>
             </div>
-            <div>
+            <div className='blob--wrapper'>
                 <img src={blob} alt='blob' className='blob'></img>
             </div>
                  

@@ -128,7 +128,6 @@ nav{
 nav .links{
   width: max-content;
   display: flex;
-  border-radius: 50px;
   gap: 1em;
   margin: 0 1em;
   padding: 0.6em 1em 0.6em 1em;
@@ -467,7 +466,6 @@ i:hover{
   max-width: 90vw;
   width: 32%;
   min-width: 400px;
-  max-width: 800px;
   backdrop-filter: blur(6px);
   overflow:hidden;
   transition: var(--transition-basic)
@@ -529,6 +527,7 @@ i:hover{
   width: 15em;
   height: 15em;
   object-fit: cover;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid var(--black)
@@ -632,6 +631,7 @@ i:hover{
 
 .timeline{
   width: 49%;
+  margin: 1em 0;
   padding-left:5em;
   line-height: 2em;
 }
@@ -661,6 +661,7 @@ i:hover{
 }
 
 .gallery{
+  margin: 1em 0;
   width: 49%;
   z-index: 0;
 }
@@ -773,6 +774,7 @@ footer p{
 @media (orientation: portrait){
   .container{
     width: var(--container-width-md);
+    margin-top: 1em;
   }
 
   section{
@@ -801,26 +803,52 @@ footer p{
   .cta{
     display: flex;
     flex-direction: column;
+    gap: 0.2em;
   }
 
   footer{
-    flex-direction: column;
-    justify-content: start;
-    padding: 1em;
-  }
-
-  h1{
-    font-size: 0.8em;
+    display: none;
   }
   
   nav .links{
     width: 100%;
+    gap: 0.2em;
+    padding: 0.2em;
+    margin: 0;
+  }
+
+  .links:nth-child(2), .links:nth-child(3), .links:nth-child(4){
+    color: red;
   }
 
   .links > *{
     font-size: 0.8em;
-    margin: 0.2em 0.6em;
+    margin: 0.3em;
+    padding: 0;
+  }
 
+  .introduction{
+    flex-direction: column;
+  }
+
+  .about__top{
+    flex-direction: column;
+  }
+
+  .about__bottom{
+    flex-direction: column;
+  }
+
+  .blob--wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    z-index: -2;
+  }
+
+  #home > .container{
+    width: 100%;
   }
 }
 

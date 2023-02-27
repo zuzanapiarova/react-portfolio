@@ -81,7 +81,7 @@ const About = () => {
                                 <p>FIELD OF STUDY: Bachelor of Science in Software development</p>
                                 
                                 <div className='cta'>
-                                <a href='https://www.iu.org/about/story-of-iu/' target='_blank' rel="noreferrer"><img className='iu-logo--wrapper' src={iuLogo} alt='international university of applied sciences logo'></img></a>
+                                    <a href='https://www.iu.org/about/story-of-iu/' target='_blank' rel="noreferrer"><img className='iu-logo--wrapper' src={iuLogo} alt='international university of applied sciences logo'></img></a>
                                     <LinkButtons name='CVdownload' />
                                     <LinkButtons name='CVopen' /> 
                                 </div> 
