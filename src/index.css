@@ -611,12 +611,12 @@ i:hover{
 .characteristic p{
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 75%;
   color: var(--white);
 }
 
 .characteristic > i{
-  font-size: 2em;
+  font-size: 180%;
    color: var(--white);
    height: 100%;
 }
@@ -634,7 +634,7 @@ i:hover{
 .timeline{
   width: 49%;
   margin: 1em 0;
-  padding-left:5em;
+
   line-height: 2em;
 }
 
@@ -642,14 +642,16 @@ i:hover{
   display: flex;
   align-items: center;
   gap: 1em;
-  position: relative
+  position: relative;
+  padding-left:5em;
 }
 
 .date-invisible{
   position: absolute;
-  right: 102%;
+  right: 90%;
   font-size: 0.8em;
   width: max-content;
+  text-align: end;
   opacity: 0;
   transition: var(--transition-basic)
 }
