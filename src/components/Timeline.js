@@ -8,7 +8,7 @@ const TimelineEvent = () => {
         {
             id:uuid(), 
             num: 1,
-            description: 'started studying ARCHITECTURE at CVUT, Prague ', 
+            description: 'started studying ARCHITECTURE at Czech Technical University, Prague ', 
             date: 'September 2019'
         }, 
         {

@@ -80,7 +80,7 @@ const Gallery = () => {
         id: uuid(),
         num: 13, 
         image: img13, 
-        description: '... and learning to code :)'
+        description: '... but most of my time I spend learning to code'
       }
       /* {
           id: uuid(),
@@ -108,11 +108,11 @@ const Gallery = () => {
           // listen for Swiper events using addEventListener
           swiperElRef.current.addEventListener('progress', (e) => {
             const [swiper, progress] = e.detail;
-            console.log(progress);
+            //console.log(progress);
           });
       
           swiperElRef.current.addEventListener('slidechange', (e) => {
-            console.log('slide changed');
+            //console.log('slide changed');
           });
         }, []);
   

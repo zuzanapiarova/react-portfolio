@@ -246,6 +246,7 @@ section#home{
   display: flex;
   gap: 1em;
   padding: 1em 0;
+  flex-wrap: wrap;
 }
 
 .btn{
@@ -463,9 +464,9 @@ i:hover{
   justify-content: space-between;
   border: 1px solid black;
   margin: 1em 0;
-  max-width: 80vw;
   width: 32%;
   min-width: 400px;
+  max-width: 800px;
   backdrop-filter: blur(6px);
   overflow:hidden;
   transition: var(--transition-basic)
@@ -544,6 +545,7 @@ i:hover{
 .introduction{
   display: flex;
   gap: 2em;
+  width: 65%;
 }
 
 .general__info{
@@ -570,6 +572,7 @@ i:hover{
   flex-direction: column;
   gap: 1em;
   height: 100%;
+  width: 35%;
 }
 
 .about__card{
@@ -583,8 +586,7 @@ i:hover{
 .characteristic{
   width: calc(100% / 3);
   padding: 1em;
-  height: 8em;
-  width: 8em;
+  aspect-ratio: 1 / 1;
   text-align: center;
   color: var(--white);
   position: relative;
@@ -784,6 +786,13 @@ footer p{
     min-height: max-content;
     max-height: max-content;
   }
+  .project__card{
+    width: 90vw;
+  }
+
+  .general__info{
+    width: 100%;
+  }
 
   #contact .container{
     width: 90%;
@@ -803,7 +812,7 @@ footer p{
   .cta{
     display: flex;
     flex-direction: column;
-    gap: 0.2em;
+    padding: 0;
   }
 
   footer{
@@ -848,14 +857,17 @@ footer p{
     width: 100%;
     z-index: -2;
     padding: 15%;
-    
   }
 
   #home > .container{
     width: 100%;
   }
 
-  .timeline, .gallery{
+  .para__deco{
+    width: 100%;
+  }
+
+  .timeline, .gallery, .gallery--wrapper{
     width: 100%;
   }
 }

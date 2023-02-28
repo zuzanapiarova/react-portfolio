@@ -16,18 +16,19 @@ const Contact = () => {
         e.preventDefault();
         const config = {
             SecureToken: 'c3a8dfda-d4b4-46a0-8c11-d5554bd48547', 
+            Port: 2525,
             To : 'zuzana.piarova1@gmail.com',
-            From : formState.email,
+            From : 'zuzana.piarova1@gmail.com',
             Subject : "Portfolio message",
-            Body : `${formState.name} sends a message:${formState.message}`
+            Body : `${formState.name} (${formState.email}) sends a message:${formState.message}`
         };
         if(window.Email){
             window.Email.send(config).then(() => {
-                alert('Message sent succesfully!')}
-            );
-            
+                alert('Message sent succesfully!')
+                setFormState(e.target.value = '');
+            }
+            );         
         }
-
     }
     const copyrightDate = new Date();
     const copyrightYear = copyrightDate.getFullYear();
