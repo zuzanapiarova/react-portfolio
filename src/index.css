@@ -648,7 +648,7 @@ i:hover{
 
 .date-invisible{
   position: absolute;
-  right: 90%;
+  right: 44em;
   font-size: 0.8em;
   width: max-content;
   text-align: end;
