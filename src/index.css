@@ -465,7 +465,7 @@ i:hover{
   border: 1px solid black;
   margin: 1em 0;
   width: 32%;
-  min-width: 400px;
+  min-width: 300px;
   max-width: 800px;
   backdrop-filter: blur(6px);
   overflow:hidden;
@@ -787,9 +787,12 @@ footer p{
     max-height: max-content;
   }
   .project__card{
-    width: 90vw;
+    min-width: 80vw;
   }
 
+  .introduction{
+    width: 100%;
+  }
   .general__info{
     width: 100%;
   }
@@ -868,6 +871,14 @@ footer p{
   }
 
   .timeline, .gallery, .gallery--wrapper{
+    width: 100%;
+  }
+
+  #contact form{
+    margin-top: 1em;
+  }
+
+  .about-cards{
     width: 100%;
   }
 }
