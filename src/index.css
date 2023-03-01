@@ -643,6 +643,7 @@ i:hover{
   align-items: center;
   gap: 1em;
   position: relative;
+  padding-left: 5em;
 }
 
 .date-invisible{
