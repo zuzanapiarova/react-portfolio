@@ -46,6 +46,7 @@ const Contact = () => {
                 </div>
                 <form action="https://formsubmit.co/zuzana.piarova1@gmail.com" method="POST"  /*onSubmit={submitHandler}*/>
                     <input type="hidden" name="_captcha" value="false"></input>
+                    <input type="hidden" name="_next" value="https://main--zuzanapiarova.netlify.app"></input>
                     <input type='text' name='name' placeholder='Name or company ...' /*onChange={changeHandler} value={formState.name || ''} */required></input>
                     <input type='email' name='email' placeholder='Email ...' /*onChange={changeHandler} value={formState.email || ''}*/ required></input>
                     <textarea name='message' placeholder='Enter your message ...' /*onChange={changeHandler} value={formState.message || ''}*/ > </textarea>

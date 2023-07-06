@@ -23,7 +23,7 @@ const About = () => {
                         </div>
                         <div className='general__info'>
                                 <p>NAME: ZUZANA PIAROVA</p>
-                                <p>AGE: 22</p>
+                                <p>AGE: 23</p>
                                 <p>FROM: Banská Bystrica, SLOVAKIA</p>
                                 <p>BASED IN: Prague, CZECHIA</p>
                                 <p>UNIVERSITY: International university of Applied Sciences, GERMANY</p>
