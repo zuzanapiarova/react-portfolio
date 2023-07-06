@@ -31,6 +31,11 @@ const Contact = () => {
         }
     }
     */
+
+    function popupMessage(){
+        alert('Message sent successfully! I will contact you within 1-2 working days.');
+    };
+
     const copyrightDate = new Date();
     const copyrightYear = copyrightDate.getFullYear();
 
@@ -44,7 +49,7 @@ const Contact = () => {
                     <LinkButtons name='email'/>
                     <LinkButtons name='whatsapp'/>
                 </div>
-                <form action="https://formsubmit.co/zuzana.piarova1@gmail.com" method="POST"  /*onSubmit={submitHandler}*/>
+                <form action="https://formsubmit.co/zuzana.piarova1@gmail.com" method="POST"  onSubmit={popupMessage}>
                     <input type="hidden" name="_captcha" value="false"></input>
                     <input type="hidden" name="_next" value="https://zuzanapiarova.netlify.app"></input>
                     <input type='text' name='name' placeholder='Name or company ...' /*onChange={changeHandler} value={formState.name || ''} */required></input>
