@@ -12,9 +12,10 @@ REACT SCROLL - scroll functions - can scroll on a section on click, links in nav
 DARK MODE BY UPDATING CSS VARIABLES https://www.section.io/engineering-education/dynamically-update-react-and-javascript-with-css-variables/#adding-a-custom-variable-to-change-the-react-logo-color
 
 EMAIL FROM FORM https://smtpjs.com <-- service -->tutorial https://www.youtube.com/watch?v=wUK40U6sPH0
+
 DEPLOYING - through netlify, just run npm run build before deployment
 
-NETLIFY DONT TREAT WARNINGS AS ERRORS - https://dev.to/kapi1/solved-treating-warnings-as-errors-because-of-process-env-ci-true-bk5
+NETLIFY - how to NOT TREAT WARNINGS AS ERRORS - https://dev.to/kapi1/solved-treating-warnings-as-errors-because-of-process-env-ci-true-bk5
 
 ## Available Scripts
 

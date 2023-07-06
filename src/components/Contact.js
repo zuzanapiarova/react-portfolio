@@ -8,7 +8,7 @@ const Contact = () => {
 
    const [formState, setFormState] = useState({});
 
-
+/*
    const changeHandler = (e) => {
         setFormState({...formState, [e.target.name]: e.target.value})
    }
@@ -24,12 +24,13 @@ const Contact = () => {
         };
         if(window.Email){
             window.Email.send(config).then(() => {
-                alert('Message sent succesfully!')
+                alert('Message sent successfully! I will contact you within 1-2 working days.')
                 setFormState(e.target.value = '');
             }
             );         
         }
     }
+    */
     const copyrightDate = new Date();
     const copyrightYear = copyrightDate.getFullYear();
 
@@ -43,9 +44,9 @@ const Contact = () => {
                     <LinkButtons name='email'/>
                     <LinkButtons name='whatsapp'/>
                 </div>
-                <form onSubmit={submitHandler}>
-                    <input type='text' placeholder='Name or company ...' onChange={changeHandler} value={formState.name || ''} name='name' required></input>
-                    <input type='email' placeholder='Email ...' name='email' onChange={changeHandler} value={formState.email || ''} required></input>
+                <form action="https://formsubmit.co/zuzana.piarova1@gmail.com" method="POST"  /*onSubmit={submitHandler}*/>
+                    <input type='text' name='name' placeholder='Name or company ...' onChange={changeHandler} value={formState.name || ''} required></input>
+                    <input type='email' name='email' placeholder='Email ...' onChange={changeHandler} value={formState.email || ''} required></input>
                     <textarea name='message' placeholder='Enter your message ...' onChange={changeHandler} value={formState.message || ''}> </textarea>
                     <button type='submit' className='btn__filled'>Send email</button>
                 </form>
@@ -65,18 +66,3 @@ const Contact = () => {
 export default Contact;
 
 
-
-
-//direct mail
-//direct download cv
-//open cv
-
-//social
-//linkedin
-//email
-//whatsapp
-
-//check my work at
-//github
-//front-end mentor
-//codewars

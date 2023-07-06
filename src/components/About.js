@@ -10,58 +10,7 @@ import { v4 as uuid } from 'uuid';
 import Gallery from './Gallery.js';
 
 const About = () => {
-/*
-    const timestamps = [
-        {
-            id:uuid(), 
-            num: 1,
-            description: 'started studying ARCHITECTURE at CVUT, Prague ', 
-            date: 'September 2019'
-        }, 
-        {
-            id:uuid(), 
-            num: 2,
-            description: 'left university 2 years later due to COVID pandemic', 
-            date: 'June 2021'
-        }, 
-        {
-            id:uuid(), 
-            num: 3,
-            description: 'moved to NETHERLANDS', 
-            date: 'October 2021'
-        }, 
-        {
-            id:uuid(), 
-            num: 4,
-            description: 'started learning PROGRAMMING on my own', 
-            date: 'December 2021'
-        }, 
-        {
-            id:uuid(), 
-            num: 5,
-            description: 'enrolled in a university to study SOFTWARE DEVELOPMENT', 
-            date: 'April 2022'
-        },
-        {
-            id:uuid(), 
-            num: 6,
-            description: 'started working on personal PROJECTS and PORTFOLIO', 
-            date: 'November 2022'
-        }, 
-        {
-            id:uuid(), 
-            num: 7,
-            description: 'searching for an INTERNSHIP', 
-            date: 'March 2023'
-        }
-    ]
 
-    const populateTimeline = timestamps.map(event => {
-        return (
-            <TimelineEvent event={event} />
-        )
-    });
-*/
     return(
         <section id='about'>
             <h5>GET TO KNOW ME</h5>
@@ -75,8 +24,8 @@ const About = () => {
                         <div className='general__info'>
                                 <p>NAME: ZUZANA PIAROVA</p>
                                 <p>AGE: 22</p>
-                                <p>BASED IN: Banská Bystrica, SLOVAKIA</p>
-                                <p>CURRENT CITY: Eindhoven, NETHERLANDS</p>
+                                <p>FROM: Banská Bystrica, SLOVAKIA</p>
+                                <p>BASED IN: Prague, CZECHIA</p>
                                 <p>UNIVERSITY: International university of Applied Sciences, GERMANY</p>
                                 <p>FIELD OF STUDY: Bachelor of Science in Software development</p>
                                 
