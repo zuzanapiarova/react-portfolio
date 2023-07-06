@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import blob from '../assets/images/newblob.svg';
 
 import LinkButtons from './LinkButtons';
 import Socials from './Socials';
 
 const Contact = () => {
-
+/*
    const [formState, setFormState] = useState({});
 
-/*
+
    const changeHandler = (e) => {
         setFormState({...formState, [e.target.name]: e.target.value})
    }
@@ -45,9 +45,9 @@ const Contact = () => {
                     <LinkButtons name='whatsapp'/>
                 </div>
                 <form action="https://formsubmit.co/zuzana.piarova1@gmail.com" method="POST"  /*onSubmit={submitHandler}*/>
-                    <input type='text' name='name' placeholder='Name or company ...' onChange={changeHandler} value={formState.name || ''} required></input>
-                    <input type='email' name='email' placeholder='Email ...' onChange={changeHandler} value={formState.email || ''} required></input>
-                    <textarea name='message' placeholder='Enter your message ...' onChange={changeHandler} value={formState.message || ''}> </textarea>
+                    <input type='text' name='name' placeholder='Name or company ...' /*onChange={changeHandler} value={formState.name || ''} */required></input>
+                    <input type='email' name='email' placeholder='Email ...' /*onChange={changeHandler} value={formState.email || ''}*/ required></input>
+                    <textarea name='message' placeholder='Enter your message ...' /*onChange={changeHandler} value={formState.message || ''}*/ > </textarea>
                     <button type='submit' className='btn__filled'>Send email</button>
                 </form>
                 
